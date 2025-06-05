@@ -54,7 +54,7 @@ pnpm convert
 ## Features
 
 - Converts multiple images in batch
-- Maintains original image quality (80% quality setting)
+- Maintains original image quality (100% quality setting)
 - Creates output directory if it doesn't exist
 - Provides progress feedback during conversion
 - Error handling for failed conversions
@@ -63,14 +63,14 @@ pnpm convert
 
 The default WebP conversion settings are:
 
-- Quality: 80%
+- Quality: 100%
 - Output format: WebP
 
 To modify these settings, you can edit the `index.ts` file and adjust the Sharp configuration:
 
 ```typescript
 await sharp(inputPath)
-  .webp({ quality: 80 }) // Adjust quality here (0-100)
+  .webp({ quality: 100 }) // Adjust quality here (0-100)
   .toFile(outputPath);
 ```
 
